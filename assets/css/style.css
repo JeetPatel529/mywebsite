@@ -118,3 +118,18 @@ body {
 .active-tab-content {
     display: block;
 }
+
+.img-scale-ani:hover img {
+    animation: img_scale 6s ease-in-out forwards;
+    -webkit-animation: img_scale 6s ease-in-out forwards;
+}
+
+@keyframes img_scale {
+    100% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+}
