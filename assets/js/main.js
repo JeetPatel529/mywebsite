@@ -7,6 +7,10 @@ $('.TabBtn').click(function () {
 });
 
 
+$("#MobileMenuBtn").click(function(){
+    $(".mobilemenu-list").toggleClass("mobilemenu-list-show")
+})
+
 
 var swiper = new Swiper("[My_Skills_slider]", {
     slidesPerView: 1.5,
@@ -50,3 +54,5 @@ var swiper = new Swiper("[My_Skills_slider]", {
     },
     slideToClickedSlide: true,
 });
+
+

@@ -7,6 +7,7 @@
     <title>Jeet Kasundra</title>
     <script src="./assets/js/tailwind.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,13 +34,16 @@
             </ul>
         </div>
     </header>
-    <div class="h-[calc(28dvw+2rem)] bg-[#E3E3FF] border-b-[calc(0.02dvh+0.1dvw)] border-black"></div>
+    <div
+        class="h-[calc(28dvw+2rem)] bg-[#E3E3FF] border-b-[calc(0.02dvh+0.1dvw)] border-black max-[440px]:h-[calc(42dvw+2rem)]">
+    </div>
 
 
     <div
         class="bg-white border-[calc(0.02dvh+0.1dvw)] border-black max-w-[calc(42dvw+2rem)] max-[1440px]:max-w-[calc(62dvw+2rem)] max-[810px]:max-w-[calc(78dvw+2rem)] mx-auto py-[calc(2dvw+12px)] px-[calc(1.6dvw+12px)] rounded-[calc(0.4dvw+4px)] -mt-[calc(14dvw+1rem)] mb-[calc(4dvw+1rem)] relative">
-        <div class="absolute right-[calc(2dvw+1rem)]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
+        <div class="absolute right-[calc(2dvw+1rem)] ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 65 64" fill="none"
+                class="max-[440px]:w-[32px] max-[440px]:h-[32px]">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M4.99809 32.4117C10.9275 23.5043 21.4139 5.65144 28.6233 4.60068C35.4566 3.60468 59.3211 24.7565 59.4034 25.7048C59.8871 31.2855 60.6775 36.8394 61.4155 42.3905C61.7638 45.0093 62.6418 48.0772 61.3042 50.5424C58.9109 54.9527 51.9755 55.0858 47.6504 55.7994C37.5261 57.4704 27.2446 59.0556 16.9699 59.3337C12.753 59.4482 10.5558 57.8511 9.13206 55.8071C7.55166 53.5393 6.99969 50.233 6.57985 47.5889C5.86654 43.1003 5.23714 37.2354 4.99809 32.4117Z"
                     fill="white" stroke="black" stroke-width="2" stroke-miterlimit="1.5" stroke-linecap="round"
@@ -56,7 +60,7 @@
         </div>
         <div class="flex flex-col space-y-[calc(0.6dvw+6px)]">
             <div
-                class="w-fit  px-[calc(1dvw+4px)] py-[calc(0.3dvw+2px)] bg-[#FFE49F] rounded-[calc(0.8dvw+12px)] flex items-center gap-[calc(0.1dvw+4px)] font1-regular text-[calc(0.5dvw+10px)] border-[calc(0.02dvh+0.1dvw)] border-black">
+                class="w-fit  px-[calc(1dvw+4px)] py-[calc(0.3dvw+2px)] bg-[#FFE49F] rounded-[calc(0.8dvw+12px)] flex items-center gap-[calc(0.1dvw+4px)] font1-regular text-[calc(0.5dvw+10px)] max-[440px]:text-[calc(1.2dvw+4px)] border-[calc(0.02dvh+0.1dvw)] border-black">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[calc(0.4dvw+5px)]" viewBox="0 0 13 13" fill="none">
                     <path
                         d="M7.75898 6.85331C8.87636 7.2763 10.3804 7.1992 11.338 6.66983L12.125 6.23483L11.338 5.79982C10.3804 5.27048 8.87642 5.1934 7.75898 5.61633L6.92102 5.93352C6.9158 5.91663 6.9095 5.90034 6.90332 5.88393L7.71776 5.51676C8.807 5.02571 9.8159 3.90774 10.1188 2.85629L10.3677 1.99218L9.50354 2.24105C8.4521 2.5439 7.33412 3.55284 6.84302 4.64205L6.48842 5.42869C6.47204 5.42073 6.45566 5.41283 6.43874 5.40594L6.74348 4.60083C7.16642 3.48344 7.08932 1.97945 6.56 1.02183L6.125 0.234863L5.68999 1.02186C5.16064 1.97948 5.08357 3.48344 5.5065 4.60086L5.81124 5.40597C5.7943 5.41286 5.77792 5.42076 5.76157 5.42871L5.40693 4.64207C4.91587 3.55287 3.79789 2.54392 2.74644 2.24108L1.88233 1.99221L2.1312 2.85632C2.43405 3.90774 3.443 5.02574 4.53221 5.51679L5.34664 5.88396C5.34048 5.90037 5.33415 5.91666 5.32898 5.93355L4.49099 5.61636C3.3736 5.1934 1.8696 5.27051 0.911978 5.79984L0.125 6.23483L0.912002 6.66983C1.86963 7.1992 3.3736 7.2763 4.49102 6.85331L5.36817 6.52133C5.37508 6.53645 5.38203 6.55163 5.38982 6.56627L4.53224 6.95291C3.44303 7.44394 2.43408 8.56192 2.13123 9.61335L1.88236 10.4775L2.74647 10.2286C3.79789 9.92576 4.9159 8.91682 5.40696 7.82764L5.80494 6.94487C5.81964 6.95099 5.83491 6.95603 5.85003 6.96137L5.50653 7.86886C5.08357 8.98624 5.16067 10.4903 5.69001 11.4479L6.125 12.2349L6.56006 11.4479C7.08938 10.4903 7.16648 8.9863 6.74354 7.86886L6.39998 6.96131C6.4151 6.95603 6.4304 6.95099 6.4451 6.94481L6.84308 7.82758C7.33412 8.91682 8.4521 9.92576 9.50354 10.2286L10.3677 10.4775L10.1188 9.61335C9.81596 8.56192 8.807 7.44394 7.71782 6.95285L6.86018 6.56627C6.86798 6.55163 6.87494 6.53645 6.88184 6.52127L7.75898 6.85331Z"
@@ -64,18 +68,19 @@
                 </svg>
                 Contact Me
             </div>
-            <h1 class="text-[calc(1.8dvw+12px)] font2-medium">Got a project in mind?<br>
+            <h1 class="text-[calc(1.8dvw+12px)] font2-medium max-[440px]:text-[calc(2.1dvw+12px)]">Got a project in
+                mind?<br>
                 Let's get in touch.</h1>
         </div>
         <form action="#" class="flex flex-col space-y-[calc(1.8dvw+14px)] mt-[calc(1.8dvw+12px)]">
             <input type="text"
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D]"
+                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
                 placeholder="Enter Your Name *" />
             <input type="email"
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D]"
+                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
                 placeholder="Enter Your email *" />
             <textarea
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] resize-none min-h-[calc(6dvw+16px)]"
+                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] resize-none min-h-[calc(6dvw+16px)] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)] max-[440px]:min-h-[calc(12dvw+12px)]"
                 placeholder="message"></textarea>
             <button type="submit" class="relative w-fit block group transition-[translate]">
                 <div
@@ -198,6 +203,30 @@
 
 
 
+
+    <div class="fixed right-[3dvw] bottom-[1.8dvw] z-50">
+        <div class="flex flex-col space-y-[calc(0.8dvw+6px)] items-center">
+            <div class="flex flex-col space-y-[calc(0.4dvw+4px)] mobilemenu-list">
+                <div
+                    class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[8dvw] max-[440px]:h-[8dvw] flex items-center justify-center">
+                </div>
+                <div
+                    class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[8dvw] max-[440px]:h-[8dvw] flex items-center justify-center">
+                </div>
+                <div
+                    class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[8dvw] max-[440px]:h-[8dvw] flex items-center justify-center">
+                </div>
+                <div
+                    class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[8dvw] max-[440px]:h-[8dvw] flex items-center justify-center">
+                </div>
+            </div>
+            <div class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[9dvw] max-[440px]:h-[9dvw] flex items-center justify-center"
+                id="MobileMenuBtn"></div>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
