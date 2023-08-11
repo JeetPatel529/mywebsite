@@ -9,6 +9,7 @@ $('.TabBtn').click(function () {
 
 $("#MobileMenuBtn").click(function(){
     $(".mobilemenu-list").toggleClass("mobilemenu-list-show")
+    $(this).children().toggleClass("hidden")
 })
 
 

@@ -135,7 +135,7 @@ body {
 }
 
 
-.mobilemenu-list div {
+.mobilemenu-list a {
     display: none;
     opacity: 0;
     transition: 0.3s;
@@ -163,24 +163,24 @@ body {
     }
 }
 
-.mobilemenu-list div:nth-last-of-type(1) {
+.mobilemenu-list a:nth-last-of-type(1) {
     animation-duration: 2s;
 }
 
-.mobilemenu-list div:nth-last-of-type(2) {
+.mobilemenu-list a:nth-last-of-type(2) {
     animation-duration: 2.8s;
 }
 
-.mobilemenu-list div:nth-last-of-type(3) {
+.mobilemenu-list a:nth-last-of-type(3) {
     animation-duration: 3.4s;
 }
 
-.mobilemenu-list div:nth-last-of-type(4) {
+.mobilemenu-list a:nth-last-of-type(4) {
     animation-duration: 4s;
 }
 
-.mobilemenu-list-show div {
-    display: block;
+.mobilemenu-list-show a {
+    display: flex;
 }
 
 
