@@ -10,9 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="max-[940px]:h-[100dvh]">
 
-    <header class="w-full bg-white py-1 border-b-[calc(0.02dvh+0.1dvw)] border-black max-[796px]:hidden">
+    <header class="w-full bg-white py-1 border-b border-black max-[796px]:hidden">
         <div class="w-full max-w-[calc(82dvw+1rem)] max-[1140px]:max-w-[calc(96dvw+1rem)] mx-auto">
             <ul class="w-full flex items-center justify-between">
                 <li><a href="#"
@@ -36,13 +36,12 @@
     </header>
 
 
-    <div
-        class="h-[calc(28dvw+2rem)] bg-[#E3E3FF] border-b-[calc(0.02dvh+0.1dvw)] border-black max-[440px]:h-[calc(42dvw+2rem)]">
+    <div class="h-[calc(28dvw+2rem)] bg-[#E3E3FF] border-b border-black max-[440px]:h-[calc(42dvw+2rem)]">
     </div>
 
 
     <div
-        class="bg-white border-[calc(0.02dvh+0.1dvw)] border-black max-w-[calc(42dvw+2rem)] max-[1440px]:max-w-[calc(62dvw+2rem)] max-[810px]:max-w-[calc(78dvw+2rem)] mx-auto py-[calc(2dvw+12px)] px-[calc(1.6dvw+12px)] rounded-[calc(0.4dvw+4px)] -mt-[calc(14dvw+1rem)] mb-[calc(4dvw+1rem)] relative">
+        class="bg-white border border-black max-w-[calc(42dvw+2rem)] max-[1440px]:max-w-[calc(62dvw+2rem)] max-[810px]:max-w-[calc(78dvw+2rem)] mx-auto py-[calc(2dvw+12px)] px-[calc(1.6dvw+12px)] rounded-[calc(0.4dvw+4px)] -mt-[calc(14dvw+1rem)] mb-[calc(4dvw+1rem)] relative">
         <div class="absolute right-[calc(2dvw+1rem)] ">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 65 64" fill="none"
                 class="max-[440px]:w-[32px] max-[440px]:h-[32px] ">
@@ -62,8 +61,9 @@
         </div>
         <div class="flex flex-col space-y-[calc(0.6dvw+6px)]">
             <div
-                class="w-fit  px-[calc(1dvw+4px)] py-[calc(0.3dvw+2px)] bg-[#FFE49F] rounded-[calc(0.8dvw+12px)] flex items-center gap-[calc(0.1dvw+4px)] font1-regular text-[calc(0.5dvw+10px)] max-[440px]:text-[calc(1.2dvw+4px)] border-[calc(0.02dvh+0.1dvw)] border-black">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-[calc(0.4dvw+5px)] animate-spin" viewBox="0 0 13 13" fill="none">
+                class="w-fit  px-[calc(1dvw+4px)] py-[calc(0.3dvw+2px)] bg-[#FFE49F] rounded-[calc(0.8dvw+12px)] flex items-center gap-[calc(0.1dvw+4px)] font1-regular text-[calc(0.5dvw+10px)] max-[440px]:text-[calc(1.2dvw+4px)] border border-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[calc(0.4dvw+5px)] animate-spin" viewBox="0 0 13 13"
+                    fill="none">
                     <path
                         d="M7.75898 6.85331C8.87636 7.2763 10.3804 7.1992 11.338 6.66983L12.125 6.23483L11.338 5.79982C10.3804 5.27048 8.87642 5.1934 7.75898 5.61633L6.92102 5.93352C6.9158 5.91663 6.9095 5.90034 6.90332 5.88393L7.71776 5.51676C8.807 5.02571 9.8159 3.90774 10.1188 2.85629L10.3677 1.99218L9.50354 2.24105C8.4521 2.5439 7.33412 3.55284 6.84302 4.64205L6.48842 5.42869C6.47204 5.42073 6.45566 5.41283 6.43874 5.40594L6.74348 4.60083C7.16642 3.48344 7.08932 1.97945 6.56 1.02183L6.125 0.234863L5.68999 1.02186C5.16064 1.97948 5.08357 3.48344 5.5065 4.60086L5.81124 5.40597C5.7943 5.41286 5.77792 5.42076 5.76157 5.42871L5.40693 4.64207C4.91587 3.55287 3.79789 2.54392 2.74644 2.24108L1.88233 1.99221L2.1312 2.85632C2.43405 3.90774 3.443 5.02574 4.53221 5.51679L5.34664 5.88396C5.34048 5.90037 5.33415 5.91666 5.32898 5.93355L4.49099 5.61636C3.3736 5.1934 1.8696 5.27051 0.911978 5.79984L0.125 6.23483L0.912002 6.66983C1.86963 7.1992 3.3736 7.2763 4.49102 6.85331L5.36817 6.52133C5.37508 6.53645 5.38203 6.55163 5.38982 6.56627L4.53224 6.95291C3.44303 7.44394 2.43408 8.56192 2.13123 9.61335L1.88236 10.4775L2.74647 10.2286C3.79789 9.92576 4.9159 8.91682 5.40696 7.82764L5.80494 6.94487C5.81964 6.95099 5.83491 6.95603 5.85003 6.96137L5.50653 7.86886C5.08357 8.98624 5.16067 10.4903 5.69001 11.4479L6.125 12.2349L6.56006 11.4479C7.08938 10.4903 7.16648 8.9863 6.74354 7.86886L6.39998 6.96131C6.4151 6.95603 6.4304 6.95099 6.4451 6.94481L6.84308 7.82758C7.33412 8.91682 8.4521 9.92576 9.50354 10.2286L10.3677 10.4775L10.1188 9.61335C9.81596 8.56192 8.807 7.44394 7.71782 6.95285L6.86018 6.56627C6.86798 6.55163 6.87494 6.53645 6.88184 6.52127L7.75898 6.85331Z"
                         fill="#1D1D1D" />
@@ -76,21 +76,21 @@
         </div>
         <form action="#" class="flex flex-col space-y-[calc(1.8dvw+14px)] mt-[calc(1.8dvw+12px)]">
             <input type="text"
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
+                class="w-full border-b border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
                 placeholder="Enter Your Name *" />
             <input type="email"
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
+                class="w-full border-b border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)]"
                 placeholder="Enter Your email *" />
             <textarea
-                class="w-full border-b-[calc(0.02dvh+0.1dvw)] border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] resize-none min-h-[calc(6dvw+16px)] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)] max-[440px]:min-h-[calc(12dvw+12px)]"
+                class="w-full border-b border-black focus:outline-none py-[calc(0.1dvw+2px)]  px-[calc(0.2dvw+4px)] font2-medium text-[calc(0.8dvw+4px)] placeholder:text-[#1D1D1D] resize-none min-h-[calc(6dvw+16px)] max-[440px]:py-[1.5dvw] max-[440px]:px-[2dvw] max-[440px]:text-[calc(1dvw+4px)] max-[440px]:min-h-[calc(12dvw+12px)]"
                 placeholder="message"></textarea>
             <button type="submit" class="relative w-fit block group transition-[translate]">
                 <div
-                    class="z-10 bg-white relative font1-regular py-[calc(0.3dvw+8px)] px-[calc(1.2dvw+14px)] rounded-[calc(0.2dvw+4px)] text-center text-[calc(0.6dvw+6px)] font-medium border-[calc(0.1dvh+0.1dvw)] border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
+                    class="z-10 bg-white relative font1-regular py-[calc(0.3dvw+8px)] px-[calc(1.2dvw+14px)] rounded-[calc(0.2dvw+4px)] text-center text-[calc(0.6dvw+6px)] font-medium border border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
                     Submit
                 </div>
                 <div
-                    class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border-[calc(0.1dvh+0.1dvw)] border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
+                    class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
                 </div>
             </button>
         </form>
@@ -98,7 +98,7 @@
 
 
 
-    <footer class="w-full border-t-[calc(0.02dvh+0.1dvw)] border-black bg-[#42DEE1]">
+    <footer class="w-full border-t border-black bg-[#42DEE1] max-[940px]:fixed max-[940px]:bottom-0">
         <div class="w-full max-w-[calc(82dvw+1rem)] mx-auto">
             <div class="flex items-center justify-between w-full py-[calc(0.2dvw+12px)]">
                 <a href="#"
@@ -106,7 +106,7 @@
                 <div class="flex items-center space-x-[calc(0.4dvw+12px)]">
                     <a href="#" class="relative w-fit block group transition-[translate]">
                         <div
-                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border-[calc(0.1dvh+0.1dvw)] border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
+                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
                             <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
                                 version="1.1" viewBox="0 0 600 600" xml:space="preserve"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
@@ -125,12 +125,12 @@
                             </svg>
                         </div>
                         <div
-                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border-[calc(0.1dvh+0.1dvw)] border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
+                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
                         </div>
                     </a>
                     <a href="#" class="relative w-fit block group transition-[translate]">
                         <div
-                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border-[calc(0.1dvh+0.1dvw)] border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
+                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
                             <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
                                 version="1.1" viewBox="0 0 512 512" xml:space="preserve"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
@@ -141,12 +141,12 @@
                             </svg>
                         </div>
                         <div
-                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border-[calc(0.1dvh+0.1dvw)] border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
+                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
                         </div>
                     </a>
                     <a href="#" class="relative w-fit block group transition-[translate]">
                         <div
-                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border-[calc(0.1dvh+0.1dvw)] border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
+                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
                             <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
                                 version="1.1" viewBox="0 0 512 512" xml:space="preserve"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
@@ -156,12 +156,12 @@
                             </svg>
                         </div>
                         <div
-                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border-[calc(0.1dvh+0.1dvw)] border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
+                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
                         </div>
                     </a>
                     <a href="#" class="relative w-fit block group transition-[translate]">
                         <div
-                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border-[calc(0.1dvh+0.1dvw)] border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
+                            class="z-10 bg-white relative font1-regular py-[calc(0.1dvw+5px)] px-[calc(0.2dvw+6px)] rounded-[calc(0.2dvw+4px)] text-center  border border-black group-hover:translate-y-[calc(0.1dvw+4px)] transition-translate max-[440px]:group-hover:translate-y-[calc(0.1dvw+2px)]">
 
                             <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32"
                                 class="w-[calc(1dvw+12px)]" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@
 
                         </div>
                         <div
-                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border-[calc(0.1dvh+0.1dvw)] border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
+                            class=" z-0 absolute left-0 right-0 top-auto -bottom-[calc(0.1dvw+4px)] inline-block w-full h-full border border-black rounded-[calc(0.2dvw+4px)] bg-[#E3E3FF] max-[440px]:-bottom-[calc(0.1dvw+2px)]">
                         </div>
                     </a>
                 </div>
@@ -207,7 +207,7 @@
 
 
     <div
-        class="fixed right-[3dvw] bottom-[1.8dvw] max-[440px]:right-[4dvw] max-[440px]:bottom-[2.4dvw] z-50 max-[796px]:block hidden">
+        class="fixed right-[3dvw] bottom-[1.8dvw] max-[440px]:right-[4.4dvw] max-[440px]:bottom-[3.2dvw] z-50 max-[796px]:block hidden">
         <div class="flex flex-col space-y-[calc(0.8dvw+6px)] items-center">
             <div class="flex flex-col space-y-[calc(0.4dvw+4px)] mobilemenu-list">
                 <a href="./contact-me.html"
@@ -229,46 +229,11 @@
                 </a>
                 <a href="./my-projects.html"
                     class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[11dvw] max-[440px]:h-[11dvw] flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75%" height="75%" viewBox="0 0 40 35" fill="none">
-                        <g clip-path="url(#clip0_1_863)">
-                            <mask id="mask0_1_863" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="40" height="35">
-                                <path d="M39.6568 0.439941H0.343262V34.4399H39.6568V0.439941Z" fill="white" />
-                            </mask>
-                            <g mask="url(#mask0_1_863)">
-                                <path
-                                    d="M35.9864 34.4399H4.00586C1.98644 34.4399 0.343262 32.7967 0.343262 30.7773V4.10254C0.343262 2.08312 1.98644 0.439941 4.00586 0.439941H35.9864C38.0135 0.439941 39.6567 2.08312 39.6567 4.10254C39.6567 4.6861 39.1807 5.16216 38.5971 5.16984C38.0135 5.16984 37.5375 4.69378 37.5298 4.11022C37.5298 3.25792 36.8387 2.57454 35.9864 2.56686H4.00586C3.15356 2.56686 2.47018 3.25792 2.4625 4.11022V30.7773C2.4625 31.6296 3.15356 32.3207 4.00586 32.3207H35.9864C36.8387 32.3207 37.5298 31.6296 37.5298 30.7773V16.5185C37.5298 15.9349 38.0059 15.4589 38.5894 15.4512C39.173 15.4512 39.649 15.9273 39.6567 16.5108V30.7696C39.6567 32.7967 38.0135 34.4399 35.9864 34.4399Z"
-                                    fill="#1D1D1D" />
-                                <path
-                                    d="M1.40283 4.10249V9.4697H38.5894V4.10249C38.5894 2.66663 37.4223 1.49951 35.9864 1.49951H4.00581C2.56995 1.49951 1.40283 2.66663 1.40283 4.10249Z"
-                                    fill="#FDE4F9" />
-                                <path
-                                    d="M38.5971 10.537H1.40288C0.819323 10.537 0.343262 10.061 0.343262 9.47743V4.10254C0.343262 2.08312 1.98644 0.439941 4.00586 0.439941H35.9864C38.0135 0.439941 39.6567 2.08312 39.6567 4.10254V9.46975C39.6567 10.061 39.1807 10.537 38.5971 10.537ZM2.47018 8.41013H37.5298V4.11022C37.5298 3.25792 36.8387 2.56686 35.9864 2.56686H4.01354C3.16124 2.56686 2.47786 3.25792 2.47018 4.10254V8.41013Z"
-                                    fill="#1D1D1D" />
-                                <path
-                                    d="M22.9715 6.55186H20.9521C20.3685 6.55186 19.8925 6.0758 19.8925 5.49224C19.8925 4.90868 20.3685 4.43262 20.9521 4.43262H22.9715C23.5551 4.43262 24.0311 4.90868 24.0311 5.49224C24.0388 6.0758 23.5627 6.55186 22.9715 6.55186Z"
-                                    fill="#1D1D1D" />
-                                <path
-                                    d="M28.6075 6.55186H26.5881C26.0045 6.55186 25.5284 6.0758 25.5284 5.49224C25.5284 4.90868 26.0045 4.43262 26.5881 4.43262H28.6075C29.191 4.43262 29.6671 4.90868 29.6671 5.49224C29.6671 6.0758 29.191 6.55186 28.6075 6.55186Z"
-                                    fill="#1D1D1D" />
-                                <path
-                                    d="M34.2358 6.55186H32.2164C31.6328 6.55186 31.1567 6.0758 31.1567 5.49224C31.1567 4.90868 31.6328 4.43262 32.2164 4.43262H34.2358C34.8193 4.43262 35.2954 4.90868 35.2954 5.49224C35.3031 6.0758 34.827 6.55186 34.2358 6.55186Z"
-                                    fill="#1D1D1D" />
-                                <path d="M30.9955 21.0566H9.00452V25.9401H30.9955V21.0566Z" fill="#FDE4F9" />
-                                <path
-                                    d="M30.9955 26.9996H9.00457C8.42101 26.9996 7.94495 26.5236 7.94495 25.94V21.0489C7.94495 20.4653 8.42101 19.9893 9.00457 19.9893H30.9955C31.5791 19.9893 32.0552 20.4653 32.0552 21.0489V25.94C32.0628 26.5236 31.5868 26.9996 30.9955 26.9996ZM10.0642 24.8804H29.9359V22.1162H10.0642V24.8804Z"
-                                    fill="#1D1D1D" />
-                                <path
-                                    d="M27.7936 17.5477H12.2064C11.6229 17.5631 11.1315 17.1024 11.1161 16.5111C11.1007 15.9199 11.5614 15.4362 12.1527 15.4208C12.168 15.4208 12.1911 15.4208 12.2064 15.4208H27.8013C28.3848 15.4054 28.8763 15.8661 28.8916 16.4574C28.907 17.0486 28.4463 17.5324 27.855 17.5477C27.832 17.5477 27.8166 17.5477 27.7936 17.5477Z"
-                                    fill="#1D1D1D" />
-                            </g>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1_863">
-                                <rect width="40" height="34" fill="white" transform="translate(0 0.439941)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <img src="./assets/img/my-project.png" class="w-[75%] h-[75%]">
+                </a>
+                <a href="./contact-me.html"
+                    class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[11dvw] max-[440px]:h-[11dvw] flex items-center justify-center">
+                    <img src="./assets/img/my-skills.png" class="w-[75%] h-auto">
                 </a>
                 <a href="./about-me.html"
                     class="w-[6dvw] h-[6dvw] bg-white rounded-full border border-black max-[440px]:w-[11dvw] max-[440px]:h-[11dvw] flex items-center justify-center">

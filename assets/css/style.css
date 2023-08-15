@@ -179,6 +179,11 @@ body {
     animation-duration: 4s;
 }
 
+.mobilemenu-list a:nth-last-of-type(5) {
+    animation-duration: 4.4s;
+}
+
+
 .mobilemenu-list-show a {
     display: flex;
 }
