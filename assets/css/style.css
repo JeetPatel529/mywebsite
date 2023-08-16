@@ -134,6 +134,10 @@ body {
     }
 }
 
+.Logo{
+    width: 14dvw;
+}
+
 
 .mobilemenu-list a {
     display: none;
